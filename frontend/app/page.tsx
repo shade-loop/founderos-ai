@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 export default function Home() {
+  
   const [idea, setIdea] = useState("");
   const [loading, setLoading] = useState(false);
   const [activeTab, setActiveTab] = useState("overview");
@@ -52,6 +53,9 @@ export default function Home() {
             <div className="px-4 py-2 rounded-full bg-green-500/20 text-green-400 text-sm">
               6 AI Agents Online
             </div>
+            <div className="px-4 py-2 rounded-full bg-purple-500/20 text-purple-400 text-sm">
+  Live Venture Intelligence
+</div>
 
           </div>
 
@@ -60,9 +64,8 @@ export default function Home() {
           </h1>
 
           <p className="text-zinc-400 text-xl max-w-4xl">
-            Multi-Agent Venture Intelligence Platform for startup validation,
-            market analysis, investor simulation and go-to-market planning.
-          </p>
+  Validate startup ideas with 6 specialized AI agents before writing a single line of code.
+</p>
 
         </div>
 
@@ -114,13 +117,44 @@ export default function Home() {
               disabled={loading}
               className="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-xl font-semibold"
             >
-              {loading ? "Analyzing..." : "Analyze"}
+              {loading ? "Running AI Agents..." : "Analyze"}
             </button>
 
           </div>
 
         </div>
-
+{/*
+Example Startup Chips
+*/}
+<div className="flex flex-wrap gap-2 mt-4 mb-8">
+  {[
+    "AI CFO for startups",
+    "MedRAG+ caregiver copilot",
+    "AI dermatologist",
+    "Startup advisor",
+  ].map((example) => (
+    <button
+      key={example}
+      onClick={() => setIdea(example)}
+      className="px-3 py-2 text-sm rounded-lg bg-zinc-800 hover:bg-zinc-700"
+    >
+      {example}
+    </button>
+  ))}
+</div>
+{loading && (
+  <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-4 mb-6">
+     Market Agent Working...
+    <br />
+     Competitor Agent Working...
+    <br />
+     Customer Agent Working...
+    <br />
+     Investor Agent Working...
+    <br />
+     Strategy Agent Working...
+  </div>
+)}
         {result && (
           <>
 
@@ -214,42 +248,16 @@ export default function Home() {
             {/* OVERVIEW */}
 
             {activeTab === "overview" && (
+  <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+    <h2 className="text-3xl font-bold mb-4">
+      Executive Summary
+    </h2>
 
-              <div className="grid md:grid-cols-3 gap-4">
-
-                <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-                  <h3 className="font-bold mb-2">
-                    Venture Score
-                  </h3>
-
-                  <p className="text-6xl font-bold">
-                    {result.venture_score}
-                  </p>
-                </div>
-
-                <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-                  <h3 className="font-bold mb-2">
-                    Market Score
-                  </h3>
-
-                  <p className="text-6xl font-bold">
-                    {result.market_score}
-                  </p>
-                </div>
-
-                <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-                  <h3 className="font-bold mb-2">
-                    Fundability
-                  </h3>
-
-                  <p className="text-6xl font-bold">
-                    {result.fundability_score}
-                  </p>
-                </div>
-
-              </div>
-
-            )}
+    <pre className="whitespace-pre-wrap text-zinc-300">
+      {result.synthesis}
+    </pre>
+  </div>
+)}
 
             {/* MARKET */}
 

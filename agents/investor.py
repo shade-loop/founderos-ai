@@ -1,43 +1,66 @@
 from services.fireworks_client import ask_llm
 
+
 def investor_agent(idea: str):
 
     prompt = f"""
-You are a senior venture capitalist and startup market analyst.
+You are a senior venture capitalist at Sequoia, Accel, and Andreessen Horowitz.
 
-Analyze the following startup idea in depth.
-
-STARTUP IDEA:
+Startup Idea:
 {idea}
 
-Return your analysis in this format:
+IMPORTANT:
 
-# Market Opportunity Score
-Give a score from 0-100 and explain why.
+The FIRST LINE of your response MUST be:
 
-# Total Addressable Market (TAM)
-Estimate market size and opportunity.
+Fundability Score: <number>
 
-# Industry Trends
-Current trends supporting or hurting adoption.
+Example:
+Fundability Score: 82
 
-# Customer Demand
-Why customers would pay for this solution.
+After that provide the following sections:
 
-# Growth Potential
-Short-term and long-term growth opportunities.
+## Investment Thesis
+Explain whether this startup solves a meaningful problem and why investors should care.
 
-# Competitive Landscape
-How crowded is this market.
+## VC Attractiveness
+Discuss:
+- Market size
+- Growth potential
+- Scalability
+- Competitive moat
+- Revenue potential
 
-# Key Risks
-Top 5 risks founders must consider.
+## Key Risks
+Discuss:
+- Market risks
+- Product risks
+- Regulatory risks
+- Execution risks
+- Adoption risks
 
-# Recommended Next Steps
-Specific actions for validation.
+## Funding Recommendation
+State whether:
+- Invest
+- Watchlist
+- Pass
 
-Be detailed.
-Use bullet points.
-Write 500-700 words.
+and explain why.
+
+## Suggested Funding Path
+Recommend:
+- Bootstrapped
+- Angel Round
+- Pre-Seed
+- Seed
+- Series A Ready
+
+## Investor Summary
+Provide a concise final investment recommendation.
+
+Write at least 500 words.
+
+Be specific, analytical, and realistic.
 """
+    
     return ask_llm(prompt)

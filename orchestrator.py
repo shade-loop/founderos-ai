@@ -86,10 +86,10 @@ async def run_analysis(idea: str):
     )
 
     fundability_score = re.search(
-        r"Fundability Score[:\s]*(\d+)",
-        investor,
-        re.IGNORECASE | re.DOTALL
-    )
+    r"Fundability Score\s*:\s*(\d+)",
+    investor,
+    re.IGNORECASE
+)
 
     return {
         # Dashboard metrics

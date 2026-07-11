@@ -45,3 +45,7 @@ FounderOS uses Fireworks-hosted LLMs to simulate a venture capital diligence pro
 
 Frontend: Vercel
 Backend: Render
+
+## Landing Page
+
+![FounderOS Landing](assets/landing.png)

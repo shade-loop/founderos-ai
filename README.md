@@ -13,13 +13,17 @@ FounderOS is a multi-agent venture intelligence platform that helps founders val
 
 ## Architecture
 
-User Idea
-    ↓
-Orchestrator
-    ↓
-6 Specialized AI Agents
-    ↓
-Executive Report
+User Input
+↓
+Market Agent
+Competitor Agent
+Customer Agent
+Investor Agent
+Strategy Agent
+↓
+Synthesis Agent
+↓
+FounderOS Report
 
 ## Tech Stack
 

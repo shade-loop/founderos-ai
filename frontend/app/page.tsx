@@ -159,8 +159,74 @@ Example Startup Chips
      Strategy Agent Working...
   </div>
 )}
-        {result && (
+        {result && (  
+          
           <>
+          <button
+  onClick={() => {
+    const report = `
+FounderOS Venture Report
+
+Venture Score: ${result.venture_score}
+Market Score: ${result.market_score}
+Fundability Score: ${result.fundability_score}
+Confidence: ${result.confidence}
+Verdict: ${result.verdict}
+
+========================
+
+EXECUTIVE SUMMARY
+
+${result.synthesis}
+
+========================
+
+MARKET ANALYSIS
+
+${result.market}
+
+========================
+
+COMPETITOR ANALYSIS
+
+${result.competitor}
+
+========================
+
+CUSTOMER ANALYSIS
+
+${result.customer}
+
+========================
+
+INVESTOR ANALYSIS
+
+${result.investor}
+
+========================
+
+STRATEGY
+
+${result.strategy}
+`;
+
+    const blob = new Blob([report], {
+      type: "text/plain",
+    });
+
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "FounderOS_Report.txt";
+    a.click();
+
+    URL.revokeObjectURL(url);
+  }}
+  className="mb-6 px-5 py-3 bg-green-600 hover:bg-green-700 rounded-xl font-semibold"
+>
+  📄 Download Report
+</button>
 
             {/* SCORES */}
 

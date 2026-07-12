@@ -399,7 +399,7 @@ ${result.strategy}
 
                 <div className="prose prose-invert max-w-none">
   <ReactMarkdown>
-    {result.market}
+    {result.competitor}
   </ReactMarkdown>
 </div>
               </div>
@@ -415,7 +415,7 @@ ${result.strategy}
 
                 <div className="prose prose-invert max-w-none">
   <ReactMarkdown>
-    {result.market}
+    {result.customer}
   </ReactMarkdown>
 </div>
               </div>
@@ -431,7 +431,7 @@ ${result.strategy}
 
                 <div className="prose prose-invert max-w-none">
   <ReactMarkdown>
-    {result.market}
+    {result.investor}
   </ReactMarkdown>
 </div>
               </div>
@@ -447,7 +447,7 @@ ${result.strategy}
 
                 <div className="prose prose-invert max-w-none">
   <ReactMarkdown>
-    {result.market}
+    {result.strategy}
   </ReactMarkdown>
 </div>
               </div>

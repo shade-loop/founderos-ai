@@ -171,19 +171,31 @@ Example Startup Chips
                   Venture Score
                 </p>
 
-                <h3 className="text-5xl font-bold">
-                  {result.venture_score}
-                </h3>
+                <h3
+  className={`text-5xl font-bold ${
+    result.venture_score >= 80
+      ? "text-green-400"
+      : result.venture_score >= 60
+      ? "text-yellow-400"
+      : "text-red-400"
+  }`}
+>
+  {result.venture_score}
+</h3>
               </div>
 
               <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-                <p className="text-zinc-400 mb-2">
-                  Market Score
-                </p>
-
-                <h3 className="text-5xl font-bold">
-                  {result.market_score}
-                </h3>
+                <h3
+  className={`text-5xl font-bold ${
+    result.market_score >= 80
+      ? "text-green-400"
+      : result.market_score >= 60
+      ? "text-yellow-400"
+      : "text-red-400"
+  }`}
+>
+  {result.market_score}
+</h3>
               </div>
 
               <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
@@ -191,9 +203,17 @@ Example Startup Chips
                   Fundability
                 </p>
 
-                <h3 className="text-5xl font-bold">
-                  {result.fundability_score}
-                </h3>
+                <h3
+  className={`text-5xl font-bold ${
+    result.fundability_score >= 80
+      ? "text-green-400"
+      : result.fundability_score >= 60
+      ? "text-yellow-400"
+      : "text-red-400"
+  }`}
+>
+  {result.fundability_score}
+</h3>
               </div>
 
               <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
@@ -201,9 +221,17 @@ Example Startup Chips
     Confidence
   </p>
 
-  <h3 className="text-5xl font-bold">
-    {result.confidence}
-  </h3>
+  <h3
+  className={`text-5xl font-bold ${
+    result.confidence >= 80
+      ? "text-green-400"
+      : result.confidence >= 60
+      ? "text-yellow-400"
+      : "text-red-400"
+  }`}
+>
+  {result.confidence}
+</h3>
 </div>
 
               <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">

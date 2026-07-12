@@ -75,7 +75,7 @@ catch (error) {
 
         {/* AGENTS */}
 
-        <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-5 mb-8 hover:scale-55 transition-all duration-300">
+        <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-5 mb-8 hover:scale-100 transition-all duration-300">
 
           <div className="flex flex-wrap gap-3">
 
@@ -101,7 +101,7 @@ catch (error) {
 
         {/* INPUT */}
 
-        <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-8 mb-8 hover:scale-55 transition-all duration-300">
+        <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-8 mb-8 hover:scale-100 transition-all duration-300">
 
           <h2 className="text-2xl font-bold mb-4">
             Describe Your Startup
@@ -232,7 +232,7 @@ ${result.strategy}
 
             <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
 
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-55 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-100 transition-all duration-300">
                 <p className="text-zinc-400 mb-2">
                   Venture Score
                 </p>
@@ -250,7 +250,7 @@ ${result.strategy}
 </h3>
               </div>
 
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-55 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-100 transition-all duration-300">
   <p className="text-zinc-400 mb-2">
     Market Score
   </p>
@@ -268,7 +268,7 @@ ${result.strategy}
   </h3>
 </div>
 
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-55 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-100 transition-all duration-300">
                 <p className="text-zinc-400 mb-2">
                   Fundability
                 </p>
@@ -286,7 +286,7 @@ ${result.strategy}
 </h3>
               </div>
 
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-55 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-100 transition-all duration-300">
   <p className="text-zinc-400 mb-2">
     Confidence
   </p>
@@ -304,7 +304,7 @@ ${result.strategy}
 </h3>
 </div>
 
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-55 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-100 transition-all duration-300">
                 <p className="text-zinc-400 mb-2">
                   Verdict
                 </p>

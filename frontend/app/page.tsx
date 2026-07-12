@@ -63,9 +63,9 @@ catch (error) {
 
           </div>
 
-          <h1 className="text-7xl font-black mb-4">
-            FounderOS
-          </h1>
+          <h1 className="text-7xl font-black mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 text-transparent bg-clip-text">
+  FounderOS
+</h1>
 
           <p className="text-zinc-400 text-xl max-w-4xl">
   Validate startup ideas with 6 specialized AI agents before writing a single line of code.
@@ -75,7 +75,7 @@ catch (error) {
 
         {/* AGENTS */}
 
-        <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-5 mb-8">
+        <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-5 mb-8 hover:scale-105 transition-all duration-300">
 
           <div className="flex flex-wrap gap-3">
 
@@ -101,7 +101,7 @@ catch (error) {
 
         {/* INPUT */}
 
-        <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 mb-8">
+        <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 mb-8 hover:scale-105 transition-all duration-300">
 
           <h2 className="text-2xl font-bold mb-4">
             Describe Your Startup
@@ -232,7 +232,7 @@ ${result.strategy}
 
             <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
 
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
                 <p className="text-zinc-400 mb-2">
                   Venture Score
                 </p>
@@ -250,7 +250,7 @@ ${result.strategy}
 </h3>
               </div>
 
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
   <p className="text-zinc-400 mb-2">
     Market Score
   </p>
@@ -268,7 +268,7 @@ ${result.strategy}
   </h3>
 </div>
 
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
                 <p className="text-zinc-400 mb-2">
                   Fundability
                 </p>
@@ -286,7 +286,7 @@ ${result.strategy}
 </h3>
               </div>
 
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
   <p className="text-zinc-400 mb-2">
     Confidence
   </p>
@@ -304,7 +304,7 @@ ${result.strategy}
 </h3>
 </div>
 
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
                 <p className="text-zinc-400 mb-2">
                   Verdict
                 </p>
@@ -360,7 +360,7 @@ ${result.strategy}
             {/* OVERVIEW */}
 
             {activeTab === "overview" && (
-  <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+  <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
     <h2 className="text-3xl font-bold mb-4">
       Executive Summary
     </h2>
@@ -374,7 +374,7 @@ ${result.strategy}
             {/* MARKET */}
 
             {activeTab === "market" && (
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
                 <h2 className="text-3xl font-bold mb-4">
                   Market Analysis
                 </h2>
@@ -388,7 +388,7 @@ ${result.strategy}
             {/* COMPETITOR */}
 
             {activeTab === "competitor" && (
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
                 <h2 className="text-3xl font-bold mb-4">
                   Competitor Analysis
                 </h2>
@@ -402,7 +402,7 @@ ${result.strategy}
             {/* CUSTOMER */}
 
             {activeTab === "customer" && (
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
                 <h2 className="text-3xl font-bold mb-4">
                   Customer Analysis
                 </h2>
@@ -416,7 +416,7 @@ ${result.strategy}
             {/* INVESTOR */}
 
             {activeTab === "investor" && (
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
                 <h2 className="text-3xl font-bold mb-4">
                   Investor Analysis
                 </h2>
@@ -430,7 +430,7 @@ ${result.strategy}
             {/* STRATEGY */}
 
             {activeTab === "strategy" && (
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
                 <h2 className="text-3xl font-bold mb-4">
                   Strategy Roadmap
                 </h2>

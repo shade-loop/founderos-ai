@@ -185,19 +185,22 @@ Example Startup Chips
               </div>
 
               <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-                <p className="text-zinc-400 mb-2">Market Score</p>
-                <h3
-  className={`text-5xl font-bold ${
-    result.market_score >= 80
-      ? "text-green-400"
-      : result.market_score >= 60
-      ? "text-yellow-400"
-      : "text-red-400"
-  }`}
->
-  {result.market_score}
-</h3>
-              </div>
+  <p className="text-zinc-400 mb-2">
+    Market Score
+  </p>
+
+  <h3
+    className={`text-5xl font-bold ${
+      result.market_score >= 80
+        ? "text-green-400"
+        : result.market_score >= 60
+        ? "text-yellow-400"
+        : "text-red-400"
+    }`}
+  >
+    {result.market_score}
+  </h3>
+</div>
 
               <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
                 <p className="text-zinc-400 mb-2">

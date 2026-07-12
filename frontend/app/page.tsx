@@ -75,7 +75,7 @@ catch (error) {
 
         {/* AGENTS */}
 
-        <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-5 mb-8 hover:scale-105 transition-all duration-300">
+        <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-5 mb-8 hover:scale-55 transition-all duration-300">
 
           <div className="flex flex-wrap gap-3">
 
@@ -101,7 +101,7 @@ catch (error) {
 
         {/* INPUT */}
 
-        <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 mb-8 hover:scale-105 transition-all duration-300">
+        <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-8 mb-8 hover:scale-55 transition-all duration-300">
 
           <h2 className="text-2xl font-bold mb-4">
             Describe Your Startup
@@ -232,7 +232,7 @@ ${result.strategy}
 
             <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
 
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-55 transition-all duration-300">
                 <p className="text-zinc-400 mb-2">
                   Venture Score
                 </p>
@@ -250,7 +250,7 @@ ${result.strategy}
 </h3>
               </div>
 
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-55 transition-all duration-300">
   <p className="text-zinc-400 mb-2">
     Market Score
   </p>
@@ -268,7 +268,7 @@ ${result.strategy}
   </h3>
 </div>
 
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-55 transition-all duration-300">
                 <p className="text-zinc-400 mb-2">
                   Fundability
                 </p>
@@ -286,7 +286,7 @@ ${result.strategy}
 </h3>
               </div>
 
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-55 transition-all duration-300">
   <p className="text-zinc-400 mb-2">
     Confidence
   </p>
@@ -304,7 +304,7 @@ ${result.strategy}
 </h3>
 </div>
 
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-55 transition-all duration-300">
                 <p className="text-zinc-400 mb-2">
                   Verdict
                 </p>
@@ -318,7 +318,7 @@ ${result.strategy}
 
             {/* SUMMARY */}
 
-            <div className="bg-gradient-to-r from-blue-950 to-purple-950 border border-zinc-800 rounded-2xl p-8 mb-8">
+            <div className="bg-gradient-to-r from-blue-950 to-purple-950 border border-zinc-800 rounded-2xl p-6 mb-8">
 
               <h2 className="text-3xl font-bold mb-4">
                 Executive Summary
@@ -360,12 +360,12 @@ ${result.strategy}
             {/* OVERVIEW */}
 
             {activeTab === "overview" && (
-  <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+  <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 transition-all duration-300">
     <h2 className="text-3xl font-bold mb-4">
       Executive Summary
     </h2>
 
-    <div className="prose prose-invert max-w-none">
+    <div className="prose prose-invert max-w-none leading-8">
   <ReactMarkdown>
     {result.market}
   </ReactMarkdown>
@@ -376,12 +376,12 @@ ${result.strategy}
             {/* MARKET */}
 
             {activeTab === "market" && (
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-8 transition-all duration-300">
                 <h2 className="text-3xl font-bold mb-4">
                   Market Analysis
                 </h2>
 
-                <div className="prose prose-invert max-w-none">
+                <div className="prose prose-invert max-w-none leading-8">
   <ReactMarkdown>
     {result.market}
   </ReactMarkdown>
@@ -392,12 +392,12 @@ ${result.strategy}
             {/* COMPETITOR */}
 
             {activeTab === "competitor" && (
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-8 transition-all duration-300">
                 <h2 className="text-3xl font-bold mb-4">
                   Competitor Analysis
                 </h2>
 
-                <div className="prose prose-invert max-w-none">
+                <div className="prose prose-invert max-w-none leading-8">
   <ReactMarkdown>
     {result.competitor}
   </ReactMarkdown>
@@ -408,12 +408,12 @@ ${result.strategy}
             {/* CUSTOMER */}
 
             {activeTab === "customer" && (
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-8 transition-all duration-300">
                 <h2 className="text-3xl font-bold mb-4">
                   Customer Analysis
                 </h2>
 
-                <div className="prose prose-invert max-w-none">
+                <div className="prose prose-invert max-w-none leading-8">
   <ReactMarkdown>
     {result.customer}
   </ReactMarkdown>
@@ -424,12 +424,12 @@ ${result.strategy}
             {/* INVESTOR */}
 
             {activeTab === "investor" && (
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-8 transition-all duration-300">
                 <h2 className="text-3xl font-bold mb-4">
                   Investor Analysis
                 </h2>
 
-                <div className="prose prose-invert max-w-none">
+                <div className="prose prose-invert max-w-none leading-8">
   <ReactMarkdown>
     {result.investor}
   </ReactMarkdown>
@@ -440,12 +440,12 @@ ${result.strategy}
             {/* STRATEGY */}
 
             {activeTab === "strategy" && (
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 rounded-2xl p-8 transition-all duration-300">
                 <h2 className="text-3xl font-bold mb-4">
                   Strategy Roadmap
                 </h2>
 
-                <div className="prose prose-invert max-w-none">
+                <div className="prose prose-invert max-w-none leading-8">
   <ReactMarkdown>
     {result.strategy}
   </ReactMarkdown>

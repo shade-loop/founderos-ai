@@ -1,5 +1,5 @@
 "use client";
-
+import ReactMarkdown from "react-markdown";
 import { useState } from "react";
 
 export default function Home() {
@@ -365,9 +365,11 @@ ${result.strategy}
       Executive Summary
     </h2>
 
-    <pre className="whitespace-pre-wrap text-zinc-300">
-      {result.synthesis}
-    </pre>
+    <div className="prose prose-invert max-w-none">
+  <ReactMarkdown>
+    {result.market}
+  </ReactMarkdown>
+</div>
   </div>
 )}
 
@@ -379,9 +381,11 @@ ${result.strategy}
                   Market Analysis
                 </h2>
 
-                <pre className="whitespace-pre-wrap text-zinc-300">
-                  {result.market}
-                </pre>
+                <div className="prose prose-invert max-w-none">
+  <ReactMarkdown>
+    {result.market}
+  </ReactMarkdown>
+</div>
               </div>
             )}
 
@@ -393,9 +397,11 @@ ${result.strategy}
                   Competitor Analysis
                 </h2>
 
-                <pre className="whitespace-pre-wrap text-zinc-300">
-                  {result.competitor}
-                </pre>
+                <div className="prose prose-invert max-w-none">
+  <ReactMarkdown>
+    {result.market}
+  </ReactMarkdown>
+</div>
               </div>
             )}
 
@@ -407,9 +413,11 @@ ${result.strategy}
                   Customer Analysis
                 </h2>
 
-                <pre className="whitespace-pre-wrap text-zinc-300">
-                  {result.customer}
-                </pre>
+                <div className="prose prose-invert max-w-none">
+  <ReactMarkdown>
+    {result.market}
+  </ReactMarkdown>
+</div>
               </div>
             )}
 
@@ -421,9 +429,11 @@ ${result.strategy}
                   Investor Analysis
                 </h2>
 
-                <pre className="whitespace-pre-wrap text-zinc-300">
-                  {result.investor}
-                </pre>
+                <div className="prose prose-invert max-w-none">
+  <ReactMarkdown>
+    {result.market}
+  </ReactMarkdown>
+</div>
               </div>
             )}
 
@@ -435,9 +445,11 @@ ${result.strategy}
                   Strategy Roadmap
                 </h2>
 
-                <pre className="whitespace-pre-wrap text-zinc-300">
-                  {result.strategy}
-                </pre>
+                <div className="prose prose-invert max-w-none">
+  <ReactMarkdown>
+    {result.market}
+  </ReactMarkdown>
+</div>
               </div>
             )}
 

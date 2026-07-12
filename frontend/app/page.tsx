@@ -164,7 +164,7 @@ Example Startup Chips
 
             {/* SCORES */}
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
 
               <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
                 <p className="text-zinc-400 mb-2">
@@ -195,6 +195,16 @@ Example Startup Chips
                   {result.fundability_score}
                 </h3>
               </div>
+
+              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+  <p className="text-zinc-400 mb-2">
+    Confidence
+  </p>
+
+  <h3 className="text-5xl font-bold">
+    {result.confidence}
+  </h3>
+</div>
 
               <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
                 <p className="text-zinc-400 mb-2">
